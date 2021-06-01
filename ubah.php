@@ -104,11 +104,15 @@ if (isset($_POST['kirim'])) {
 ";
 	$q=$koneksi->query($sql);
 if ($q) {
-	echo "<script> alert(' data BERHASIL diubah');</script>";
+	echo "<script> alert(' data BERHASIL diubah');
+document.location.href = 'daftar kendaraan.php';
+</script>";
 }
 
 else{
-	echo "<script> alert(' data GAGAL diubah');</script>";
+	echo "<script> alert(' data GAGAL diubah');
+document.location.href = 'ubah.php';
+</script>";
 }
 
 }
