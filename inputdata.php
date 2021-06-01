@@ -86,11 +86,15 @@ if (isset($_POST['kirim'])) {
 	$sql="INSERT INTO `kendaraan` VALUES ('', '".$nomer_mesin."', '".$nomer_rangka."', '".$jenis_kendaraan."', '".$nama_kendaraan."', '".$tanggal."', '".$nomer_BPKB."', '".$nomer_STNK."', '".$status_STNK."', '".$catatan."');";
 	$q=$koneksi->query($sql);
 if ($q) {
-	echo "<script> alert(' data BERHASIL tambahkan');</script>";
+	echo "<script> alert(' data BERHASIL tambahkan');
+document.location.href = 'daftar kendaraan.php';
+</script>";
 }
 
 else{
-	echo "<script> alert(' data GAGAL tambahkan');</script>";
+	echo "<script> alert(' data GAGAL tambahkan');
+document.location.href = 'inputdata.php';
+</script>";
 }
 
 }
