@@ -117,8 +117,6 @@ document.location.href = 'ubah.php';
 
 }
 
-
-var_dump($id);
  ?>
 
 
