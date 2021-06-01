@@ -80,10 +80,10 @@ if (isset($_POST['kirim'])) {
 	$nomer_BPKB=htmlspecialchars($_POST['g']);
 	$nomer_STNK=htmlspecialchars($_POST['h']);
 	$status_STNK=htmlspecialchars($_POST['i']);
-	$Catatan=htmlspecialchars($_POST['f']);
+	$catatan=htmlspecialchars($_POST['f']);
 	
 	$koneksi= new mysqli("localhost", "root", "", "kendaraan");
-	$sql="INSERT INTO `kendaraan` VALUES ('', '".$nomer_mesin."', '".$nomer_rangka."', '".$jenis_kendaraan."', '".$nama_kendaraan."', '".$tanggal."', '".$nomer_BPKB."', '".$nomer_STNK."', '".$status_STNK."', '".$Catatan."');";
+	$sql="INSERT INTO `kendaraan` VALUES ('', '".$nomer_mesin."', '".$nomer_rangka."', '".$jenis_kendaraan."', '".$nama_kendaraan."', '".$tanggal."', '".$nomer_BPKB."', '".$nomer_STNK."', '".$status_STNK."', '".$catatan."');";
 	$q=$koneksi->query($sql);
 if ($q) {
 	echo "<script> alert(' data BERHASIL tambahkan');</script>";
