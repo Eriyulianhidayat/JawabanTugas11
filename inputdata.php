@@ -87,7 +87,7 @@ if (isset($_POST['kirim'])) {
 	$q=$koneksi->query($sql);
 if ($q) {
 	echo "<script> alert(' data BERHASIL tambahkan');
-document.location.href = 'daftar kendaraan.php';
+document.location.href = ' daftar kendaraan dan cari.php';
 </script>";
 }
 
