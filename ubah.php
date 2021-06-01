@@ -95,11 +95,11 @@ if (isset($_POST['kirim'])) {
 	$nomer_BPKB=htmlspecialchars($_POST['g']);
 	$nomer_STNK=htmlspecialchars($_POST['h']);
 	$status_STNK=htmlspecialchars($_POST['i']);
-	$Catatan=htmlspecialchars($_POST['f']);
+	$catatan=htmlspecialchars($_POST['f']);
 	
 	$koneksi= new mysqli("localhost", "root", "", "kendaraan");
 	$sql="UPDATE `kendaraan` SET 
-	id='$id', nomer_mesin='$nomer_mesin', nomer_rangka='$nomer_rangka', jenis_kendaraan='$jenis_kendaraan', nama_kendaraan='$nama_kendaraan', tanggal='$tanggal', nomer_BPKB='$nomer_BPKB', nomer_STNK='$nomer_STNK', status_STNK='$status_STNK', kondisi='$Catatan' WHERE id=$id
+	id='$id', nomer_mesin='$nomer_mesin', nomer_rangka='$nomer_rangka', jenis_kendaraan='$jenis_kendaraan', nama_kendaraan='$nama_kendaraan', tanggal='$tanggal', nomer_BPKB='$nomer_BPKB', nomer_STNK='$nomer_STNK', status_STNK='$status_STNK', kondisi='$catatan' WHERE id=$id
 
 ";
 	$q=$koneksi->query($sql);
