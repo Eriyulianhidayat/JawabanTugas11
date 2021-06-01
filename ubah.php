@@ -13,6 +13,8 @@ $cek=mysqli_query( $koneksi,"SELECT * FROM kendaraan WHERE id=$id");
 <head>
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="gaya.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 <form action="" method="post" >
