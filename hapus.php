@@ -19,14 +19,14 @@ $koneksi= new mysqli("localhost", "root", "", "kendaraan");
 
 if (hapus($ab) > 0) {
 	echo "<script> alert(' data BERHASIL dihapus');
-	document.location.href = 'daftar kendaraan.php';
+	document.location.href = 'daftar kendaraan dan cari.php';
 	</script>";
 
 }
 
 else{
 	echo "<script> alert(' data GAGAL dihapus');
-document.location.href = 'daftar kendaraan.php';
+document.location.href = 'daftar kendaraan dan cari.php';
 </script>";
 	
 }
