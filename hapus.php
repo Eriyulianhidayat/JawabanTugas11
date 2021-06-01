@@ -25,7 +25,9 @@ if (hapus($ab) > 0) {
 }
 
 else{
-	echo "<script> alert(' data GAGAL dihapus');</script>";
+	echo "<script> alert(' data GAGAL dihapus');
+document.location.href = 'daftar kendaraan.php';
+</script>";
 	
 }
 ?>
